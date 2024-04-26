@@ -79,3 +79,10 @@ Route::post('/logout', [HotelController::class, 'logout'])->name('logout');
 // booking
 Route::get('/bookings/{room_id}', [HotelController::class, 'bookRoom'])->name('bookings.index');
 Route::post('/book-room/{room_id}', [HotelController::class, 'storeBooking'])->name('book.room');
+
+
+//montreal
+Route::get('/montreal', function () {
+    // Logic to display contact page
+    return view('montreal');
+});
